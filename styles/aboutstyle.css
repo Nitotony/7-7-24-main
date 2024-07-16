@@ -85,6 +85,8 @@ footer {
 }
 
 .about-head{
+
+    padding: 20px;
     position: relative;
     width: 800px;
     text-align: center;
@@ -174,7 +176,9 @@ footer {
 
 #myVideo{
   width: 300px;
-margin: 10px;
+margin: 10px auto;
+
+padding: 10px;
 
     
 }
@@ -187,6 +191,7 @@ margin: 10px;
 .about-head{
     width: 300px;
     margin: 30px;
+    padding: 10px;
     text-align: center;
 
     color: #e9c2a1;
