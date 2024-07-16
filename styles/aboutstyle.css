@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+
+.navbar img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+.navbar{
+    
+    width: 100%;
+    height: 150px;
+    
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+   background-color: black;
+   border-bottom: 2px solid #563e3e;
+}
+
+.navbar ul {
+
+    
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+ text-align: center;
+ padding: 30px;
+}
+
+
+.navbar ul li{
+    width: 115px;
+    height: 20px;
+    text-align: center;
+    padding: 30px;
+    font-size: large;
+    
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color:  #e9c2a1;
+}
+
+.navbar ul li a:hover{
+    background-color:#e9c2a1;
+    color: #563e3e;
+    border-radius: 20px;
+    padding: 3px;
+
+    border: 2px #563e3e solid ;
+}
+
+
+#myVideo{
+    display: flex;
+    
+    width: 600px;
+    height: 500px;
+    background-color: black;
+    padding: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+footer {
+    position: relative;
+    text-align: center;
+    color:black ;
+    background-color:#e9c2a1;
+}
+
+.about-head{
+    position: relative;
+    width: 800px;
+    text-align: center;
+    background-color:black;
+    color:  #e9c2a1;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutus-cont{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center ;
+    background-color:black;
+    color: #e9c2a1;
+
+    padding: 20px;
+}
+
+
+.aboutus-cont > *{
+
+    padding: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:375px) and (max-width:600px) {
+    
+
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+
+    .navbar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.navbar ul li{
+    width: 90px;
+    height: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+    
+}
+
+
+.navbar ul {
+    
+ padding: 5px;
+}
+
+#myVideo{
+  width: 300px;
+margin: 10px;
+
+    
+}
+
+.navbar{
+    height: 60px;
+}
+
+
+.about-head{
+    width: 300px;
+    margin: 30px;
+    text-align: center;
+
+    color: #e9c2a1;
+    background-color:black;
+}
+footer{
+    font-size: smaller;
+}
+
+
+
+
+
+.aboutus-cont{
+    width: 300px;
+    margin: 10px 20px;
+    background-color:#e9c2a1;
+    color:#563e3e;
+
+    padding: 20px;
+}
+
+
+.aboutus-cont > *{
+
+    padding: 20px;
+
+    font-size: small;
+
+}
+}
