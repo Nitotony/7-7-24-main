@@ -24,7 +24,7 @@ body{
     flex-direction: row ;
     justify-content: space-around;
    background-color: black;
-   border-bottom: 2px solid #563e3e;
+   border-bottom: 2px solid #e9c2a1;
 }
 
 .navbar ul {
@@ -67,6 +67,7 @@ body{
     background-color: black;
     color: #e9c2a1;text-align: center;
     padding: 20px;
+    
 
 }
 
@@ -158,6 +159,10 @@ footer {
     text-align: center;
     color: #e9c2a1;
     background-color: black;
+    
+    padding: 20px 10px;
+    font-size: small;
+    
 }
 
 
@@ -187,14 +192,21 @@ footer {
 }
 
 .navbar ul li{
-    width: 90px;
+    width: fit-content;
     height: 10px;
     text-align: center;
-    padding: 5px;
+    padding:15px 10px;
     font-size: small;
     
 }
-
+.navbar ul li a{
+    width: fit-content;
+    height: 10px;
+    text-align: center;
+    padding:20px 10px;
+    font-size: small;
+    
+}
 
 .navbar ul {
     
@@ -240,12 +252,51 @@ button{
 }
 
 .contact-head h1{
-    font-size: medium;
+    font-size: small;
     
 }
 
 
 
 
+
+}
+
+
+
+@media (min-width:600px) and (max-width:768px) {
+        .navbar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.navbar ul li{
+    width: fit-content;
+    height: 10px;
+    text-align: center;
+    padding:15px 10px;
+    font-size: small;
+    
+}
+.navbar ul li a{
+    width: fit-content;
+    height: 10px;
+    text-align: center;
+    padding:20px 10px;
+    font-size: small;
+    
+}
+
+.navbar ul {
+    
+ padding: 5px;
+}
+
+
+.navbar{
+    height: 60px;
+}
 
 }
