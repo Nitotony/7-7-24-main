@@ -1,4 +1,8 @@
 This is a website created using css and html. 
 
-this also almost work for all mobile views.
+
+optimized for 375px to 600px and normal desktop view.
+
+this  work for all mobile views.
+
 
