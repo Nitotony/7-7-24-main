@@ -4,52 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/contact.css">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <script>
+        const validation = () => {
+            const firstName = document.getElementsByName('firstname')[0].value;
+            const email = document.getElementsByName('email')[0].value;
+            const phoneNo = document.getElementsByName('phno')[0].value;
+            const comment = document.getElementsByName('comment')[0].value;
+
+            if (firstName.trim() === '') {
+                alert('Please enter your first name');
+                return false;
+            }
+
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return false;
+            }
+
+            const phoneRegex = /^\d{10}$/;
+            if (!phoneRegex.test(phoneNo)) {
+                alert('Please enter a valid 10-digit phone number');
+                return false;
+            }
+
+            if (comment.trim() === '') {
+                alert('Please enter a comment');
+                return false;
+            }
+alert('Form submitted successfully!');
+            return true;
+        }
+    </script>
 </head>
 <body>
     <div class="navbar">
-        <img src="./assets/ChoCo.png" alt="">
+        <img src="./assets/ChoCo.png" alt="Logo">
 
         <ul class="navigation">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About us</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
         </ul>
     </div>
 
-
     <div class="contact-head">
-<h1>CONTACT US</h1>
+        <h1>Contact Us</h1>
     </div>
-
 
     <div class="contact">
-        <form action="">
-            <label for="firstname">First Name :</label>
-            <input type="text" name="firstname" >
-            <label for="email">Email : </label>
-            <input type="email" name="email">
-            <label for="phno">Phone No : </label>
-            <input type="text" name="phno">
-            <label for="comment">Comment : </label>
-            <textarea name="comment" id=""></textarea>
-
+        <form  onsubmit="return validation()">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="phno">Phone No:</label>
+            <input type="text" name="phno" id="phno">
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment"></textarea>
 
             <div class="buttons">
-            <button type="submit">Submit</button>
-            <button>Cancel</button>
-
+                <button type="submit">Submit</button>
+                <button type="button" onclick="location.href='./index.html'">Cancel</button>
             </div>
-            
         </form>
     </div>
-    
 
-
-
-        <footer>
-     <p > The property of Choco Liver &copy;</p>
-     <p >created by NITO TONY C</p>
+    <footer>
+        <p>The property of Choco Liver &copy;</p>
+        <p>Created by NITO TONY C</p>
     </footer>
 </body>
 </html>
